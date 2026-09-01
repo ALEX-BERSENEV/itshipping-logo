@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITSHIPPING — лого «Круги Эйлера» · v1 · 02.09.2026</title>
+<style>
+  :root{
+    --orange:#FF5A00;
+    --ink:#2B2B2E;
+    --bg:#EFEFF1;
+    --card:#FFFFFF;
+    --dark:#1C1C1E;
+    --muted:#8A8A8E;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);
+    padding:32px 20px 80px;
+  }
+  .wrap{max-width:1100px;margin:0 auto;}
+  header{margin-bottom:36px;}
+  .badge{
+    display:inline-block;background:var(--orange);color:#fff;
+    font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    padding:5px 12px;border-radius:100px;margin-bottom:14px;
+  }
+  h1{font-size:30px;font-weight:800;letter-spacing:-.02em;}
+  h1 span{color:var(--orange);}
+  .sub{color:var(--muted);margin-top:8px;font-size:15px;line-height:1.5;}
+  h2{
+    font-size:20px;font-weight:800;margin:44px 0 6px;letter-spacing:-.01em;
+    display:flex;align-items:center;gap:10px;
+  }
+  h2 .num{
+    background:var(--ink);color:#fff;font-size:13px;font-weight:700;
+    width:26px;height:26px;border-radius:8px;display:inline-flex;
+    align-items:center;justify-content:center;flex:none;
+  }
+  .h2note{color:var(--muted);font-size:14px;margin-bottom:18px;line-height:1.5;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
+  .tile{
+    background:var(--card);border-radius:16px;overflow:hidden;
+    box-shadow:0 1px 3px rgba(0,0,0,.07);
+  }
+  .tile .art{
+    aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;
+    background:var(--card);
+  }
+  .tile .art.on-dark{background:var(--dark);}
+  .tile .art.on-orange{background:var(--orange);}
+  .tile .art.on-grey{background:#E4E4E7;}
+  .tile .cap{
+    padding:10px 14px 12px;font-size:13px;font-weight:600;
+    border-top:1px solid #F0F0F2;
+  }
+  .tile .cap small{display:block;font-weight:400;color:var(--muted);margin-top:2px;}
+  .tile img{width:100%;height:100%;object-fit:cover;display:block;}
+  .tile.wide{grid-column:1/-1;}
+  .tile.wide .art{aspect-ratio:auto;}
+  .tile.wide img{height:auto;}
+  .favrow{display:flex;align-items:flex-end;gap:26px;}
+  .favrow figure{display:flex;flex-direction:column;align-items:center;gap:8px;}
+  .favrow figcaption{font-size:11px;color:var(--muted);}
+  .placeholder{
+    background:repeating-linear-gradient(-45deg,#fff,#fff 12px,#FAFAFA 12px,#FAFAFA 24px);
+    border:2px dashed #D9D9DE;border-radius:16px;
+    padding:28px 24px;color:var(--muted);font-size:14px;line-height:1.6;
+  }
+  .placeholder b{color:var(--ink);}
+  footer{margin-top:56px;color:var(--muted);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">ITSHIPPING · Brand</div>
+  <h1>Лого «Круги Эйлера»: <span>SHIPPING</span> ∪ IT</h1>
+  <p class="sub">Два круга — два мира. Оранжевый — логистика, графит/хром — IT. Пересечение — ITSHIPPING.<br>
+  Версия v1 от 02.09.2026 · стиль «Plata»: глянцевый оранжевый + хром · SVG-знаки векторные, масштабируются без потерь.</p>
+</header>
+
+<!-- ================= КОНЦЕПТ 1 ================= -->
+<h2><span class="num">1</span>Концепт «Сцепленные кольца»</h2>
+<p class="h2note">Кольца сцеплены как звенья цепи: якорная цепь + связанность систем. Эйлер, цепь и минимализм в одном знаке.</p>
+
+<div class="grid">
+
+  <div class="tile">
+    <div class="art">
+      <svg width="82%" viewBox="0 0 200 130">
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="14"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FFFFFF" stroke-width="24"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="14"/>
+        <g clip-path="url(#c1a)">
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#FFFFFF" stroke-width="24"/>
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="14"/>
+        </g>
+        <clipPath id="c1a"><rect x="84" y="76" width="32" height="42"/></clipPath>
+      </svg>
+    </div>
+    <div class="cap">Основной знак<small>оранжевый + графит, белый фон</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art">
+      <svg width="82%" viewBox="0 0 200 130">
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#000" stroke-width="14"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="24"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#000" stroke-width="14"/>
+        <g clip-path="url(#c1b)">
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="24"/>
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#000" stroke-width="14"/>
+        </g>
+        <clipPath id="c1b"><rect x="84" y="76" width="32" height="42"/></clipPath>
+      </svg>
+    </div>
+    <div class="cap">Одноцветный ч/б<small>печати, гравировка, факс, документы</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art on-dark">
+      <svg width="82%" viewBox="0 0 200 130">
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="14"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#1C1C1E" stroke-width="24"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FFFFFF" stroke-width="14"/>
+        <g clip-path="url(#c1c)">
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#1C1C1E" stroke-width="24"/>
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="14"/>
+        </g>
+        <clipPath id="c1c"><rect x="84" y="76" width="32" height="42"/></clipPath>
+      </svg>
+    </div>
+    <div class="cap">Инверсия на тёмном<small>оранжевый + белый, dark mode</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art on-orange">
+      <svg width="82%" viewBox="0 0 200 130">
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="14"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="24"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="14"/>
+        <g clip-path="url(#c1d)">
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="24"/>
+          <circle cx="75" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="14"/>
+        </g>
+        <clipPath id="c1d"><rect x="84" y="76" width="32" height="42"/></clipPath>
+      </svg>
+    </div>
+    <div class="cap">Белый на оранжевом<small>бейдж, аватар, мерч</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art on-grey">
+      <div class="favrow">
+        <figure>
+          <svg width="64" viewBox="0 0 200 130">
+            <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="16"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#E4E4E7" stroke-width="26"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="16"/>
+            <g clip-path="url(#f1)">
+              <circle cx="75" cy="65" r="40" fill="none" stroke="#E4E4E7" stroke-width="26"/>
+              <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="16"/>
+            </g>
+            <clipPath id="f1"><rect x="84" y="76" width="32" height="42"/></clipPath>
+          </svg>
+          <figcaption>48 px</figcaption>
+        </figure>
+        <figure>
+          <svg width="40" viewBox="0 0 200 130">
+            <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="18"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#E4E4E7" stroke-width="28"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="18"/>
+            <g clip-path="url(#f2)">
+              <circle cx="75" cy="65" r="40" fill="none" stroke="#E4E4E7" stroke-width="28"/>
+              <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="18"/>
+            </g>
+            <clipPath id="f2"><rect x="83" y="76" width="34" height="44"/></clipPath>
+          </svg>
+          <figcaption>32 px</figcaption>
+        </figure>
+        <figure>
+          <svg width="22" viewBox="0 0 200 130">
+            <circle cx="75" cy="65" r="40" fill="none" stroke="#FF5A00" stroke-width="22"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="22"/>
+          </svg>
+          <figcaption>16 px</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="cap">Favicon-масштабы<small>на 16 px переплетение упрощается до наложения</small></div>
+  </div>
+
+</div>
+
+<!-- ================= КОНЦЕПТ 2 ================= -->
+<h2><span class="num">2</span>Концепт «Эйлер с линзой»</h2>
+<p class="h2note">Буквальная диаграмма Эйлера: пересечение (линза) залито оранжевым — «здесь рождается ITSHIPPING». Ближе всего к исходной идее.</p>
+
+<div class="grid">
+
+  <div class="tile">
+    <div class="art">
+      <svg width="82%" viewBox="0 0 200 130">
+        <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#FF5A00"/>
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="10"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="10"/>
+      </svg>
+    </div>
+    <div class="cap">Основной знак<small>графитовые контуры, оранжевая линза</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art">
+      <svg width="82%" viewBox="0 0 200 130">
+        <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#000"/>
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#000" stroke-width="10"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#000" stroke-width="10"/>
+      </svg>
+    </div>
+    <div class="cap">Одноцветный ч/б<small>печати, гравировка, документы</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art on-dark">
+      <svg width="82%" viewBox="0 0 200 130">
+        <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#FF5A00"/>
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="10"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="10"/>
+      </svg>
+    </div>
+    <div class="cap">Инверсия на тёмном<small>белые контуры, оранжевая линза</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art on-orange">
+      <svg width="82%" viewBox="0 0 200 130">
+        <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#FFF"/>
+        <circle cx="75" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="10"/>
+        <circle cx="125" cy="65" r="40" fill="none" stroke="#FFF" stroke-width="10"/>
+      </svg>
+    </div>
+    <div class="cap">Белый на оранжевом<small>линза белая — знак «в негативе»</small></div>
+  </div>
+
+  <div class="tile">
+    <div class="art on-grey">
+      <div class="favrow">
+        <figure>
+          <svg width="64" viewBox="0 0 200 130">
+            <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#FF5A00"/>
+            <circle cx="75" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="12"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="12"/>
+          </svg>
+          <figcaption>48 px</figcaption>
+        </figure>
+        <figure>
+          <svg width="40" viewBox="0 0 200 130">
+            <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#FF5A00"/>
+            <circle cx="75" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="14"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="14"/>
+          </svg>
+          <figcaption>32 px</figcaption>
+        </figure>
+        <figure>
+          <svg width="22" viewBox="0 0 200 130">
+            <path d="M 100 33.8 A 40 40 0 0 1 100 96.2 A 40 40 0 0 1 100 33.8 Z" fill="#FF5A00"/>
+            <circle cx="75" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="18"/>
+            <circle cx="125" cy="65" r="40" fill="none" stroke="#2B2B2E" stroke-width="18"/>
+          </svg>
+          <figcaption>16 px</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="cap">Favicon-масштабы<small>линза читается даже на 16 px</small></div>
+  </div>
+
+</div>
+
+<!-- ================= 3D PLATA ================= -->
+<h2><span class="num">3</span>3D-версии в стиле «Plata»</h2>
+<p class="h2note">Глянцевый оранжевый + полированный хром, как вчерашние аватарки. Сгенерировано 02.09.</p>
+
+<div class="grid">
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_602a47a7-9ac1-4f44-b8fa-a111bc346e81.png" alt="3D кольца, ракурс под углом"></div>
+    <div class="cap">Кольца 3D · v1<small>оранжевый тор + хром, под углом</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_934ae136-1175-40e2-93fc-6d36a65d527c.png" alt="3D кольца, вертикально фронтально"></div>
+    <div class="cap">Кольца 3D · v2<small>вертикальная сцепка, фронтально</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_c23983ee-114f-48dd-b8e2-6c42c3222e95.png" alt="Аватар: кольца на оранжевом бейдже"></div>
+    <div class="cap">Кольца 3D · аватар<small>хром-кольца на оранжевом бейдже, TG</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_8e16aabd-55df-4bb7-8723-96645907be8c.png" alt="3D диски Эйлера с градиентной линзой"></div>
+    <div class="cap">Эйлер 3D · линза-градиент<small>пересечение переливается оранж→хром</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_cdffed93-7d61-4da0-8062-b261ca3f1aff.png" alt="3D кольца с контейнером в пересечении"></div>
+    <div class="cap">Эйлер 3D · контейнер<small>хром-контейнер в линзе пересечения</small></div>
+  </div>
+</div>
+
+<h2><span class="num">3+</span>Плоские версии (генерация)</h2>
+<p class="h2note">AI-версии плоских знаков — для сравнения с векторными SVG из разделов 1–2.</p>
+
+<div class="grid">
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_7f379130-7d8e-41fe-9fd8-5164f79cef32.png" alt="Плоские сцепленные кольца, цвет"></div>
+    <div class="cap">Кольца flat · цвет<small>оранжевый + графит</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_c7f00ca7-7e9d-404d-bd3b-ff55396fbfd3.png" alt="Плоский Эйлер с оранжевой линзой"></div>
+    <div class="cap">Эйлер flat · цвет<small>оранжевая линза</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215651_c8a31f87-5ab9-407a-81a1-3b707a4a8f4c.png" alt="Ч/б сцепленные кольца"></div>
+    <div class="cap">Кольца flat · ч/б<small>один цвет, печати/гравировка</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_c4c3821f-623b-4ba7-8793-4bc147290208.png" alt="Ч/б Эйлер с залитой линзой"></div>
+    <div class="cap">Эйлер flat · ч/б<small>один цвет, залитая линза</small></div>
+  </div>
+  <div class="tile wide">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_215650_e45f53b8-e2af-4337-a109-b1e43c243a76.png" alt="Брендшит: сетка вариаций знака"></div>
+    <div class="cap">Брендшит<small>сетка вариаций: цвет / тёмный / ч/б / инверсия / favicon / grayscale</small></div>
+  </div>
+</div>
+
+<!-- ================= ВЧЕРА ================= -->
+<h2><span class="num">4</span>Уже сгенерировано ранее (стиль-референс)</h2>
+<p class="h2note">Вчерашние генерации 01.09 — задают стиль «Plata»: оранжевый бейдж + хромированные объекты.</p>
+
+<div class="grid">
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_084629_33f0f4b8-4690-47c5-a391-86efdad56836.png" alt="Аватар: штурвал, вариант 1"></div>
+    <div class="cap">Аватар «Штурвал» v1<small>совет учредителей, TG</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_084629_2db78331-5086-4b6d-be33-80ef6f2e3f94.png" alt="Аватар: штурвал, вариант 2"></div>
+    <div class="cap">Аватар «Штурвал» v2<small>совет учредителей, TG</small></div>
+  </div>
+  <div class="tile">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_083454_25cb2138-8818-4de0-bfd6-3caca9ac5562.png" alt="Аватар: газета и контейнеровоз"></div>
+    <div class="cap">Аватар «Дайджест»<small>газета + контейнеровоз</small></div>
+  </div>
+  <div class="tile wide">
+    <div class="art"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CSXknXvrtS7LyaBKtcTDSNVWJm/hf_20260901_100806_17c23b24-909d-4561-b8d4-338169562f70.png" alt="Баннер дайджеста 16:9"></div>
+    <div class="cap">Баннер дайджеста 16:9<small>обложка новостной рассылки</small></div>
+  </div>
+</div>
+
+<footer>
+  ITSHIPPING · концепт «Круги Эйлера» · v1 · 02.09.2026 · палитра: оранжевый #FF5A00, графит #2B2B2E, фон #EFEFF1<br>
+  SVG-знаки — вектор, копируются из исходника этой страницы напрямую в любые макеты.
+</footer>
+
+</div>
+</body>
+</html>
